@@ -1,4 +1,4 @@
-package listaContigua;
+package listaItem;
 
 import entidades.*;
 import java.util.Scanner;
