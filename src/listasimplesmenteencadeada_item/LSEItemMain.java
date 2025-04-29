@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class LSEItemMain {
 
-    static Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -49,7 +49,7 @@ public class LSEItemMain {
                     System.out.println("OPCAO INVALIDA");
             }
 
-        }while (opcao != 7);
+        } while (opcao != 7);
 
     }
 
