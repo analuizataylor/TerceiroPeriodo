@@ -12,7 +12,7 @@ public class MaiorDaLista {
         System.out.println(" entre com a quantidade de elementos da lista: ");
         quant = scan.nextInt();
 
-        for (int i=0; i<quant; i++) {
+        for (int i = 0; i < quant; i++) {
             num = (int)(Math.random()*50)+1;
             lista.insereFinal(num);
         }

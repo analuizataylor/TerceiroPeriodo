@@ -1,4 +1,5 @@
 package listacontigua_item;
+import entidades.*;
 
 public class LCItem {
 
