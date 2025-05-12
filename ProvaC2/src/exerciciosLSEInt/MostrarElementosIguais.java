@@ -6,6 +6,13 @@ import entidades.LSEInteiro;
 
 public class MostrarElementosIguais {
 
+    /*
+    * -> preencher duas listas de inteiros
+    * -> criar uma terceira lista
+    * -> armazenar na l3 apenas elementos que aparecem nas duas listas
+    * -> imprimir as tres listas
+    */
+
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {

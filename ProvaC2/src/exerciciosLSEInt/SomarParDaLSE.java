@@ -4,25 +4,18 @@ import java.util.Scanner;
 import entidades.NoInt;
 import entidades.LSEInteiro;
 
-public class MaiorDaListaLSE {
-
-    /*
-    * -> receber uma lista de inteiros
-    * -> encontrar o maior elemento
-    * -> imprimir lista e maior elemento
-    */
+public class SomarParDaLSE {
 
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         LSEInteiro lista = new LSEInteiro();
-        int maior;
+        int total;
 
         preenche(lista);
-        maior = maior(lista);
-        System.out.println("Lista: ");
-        System.out.println(lista);
-        System.out.println("O maior elemento da lista é: "+ maior);
+        System.out.println("Lista: " + lista);
+        total = somaPar (lista);
+        System.out.println("A soma de todos os pares é: "+ total);
 
     }
 
@@ -38,16 +31,16 @@ public class MaiorDaListaLSE {
         }
     }
 
-    public static int maior(LSEInteiro lista) {
-        NoInt maior = lista.getPrim();
+    public static int somaPar(LSEInteiro lista) {
+        int total = 0;
         NoInt aux = lista.getPrim().getProx();
 
         while (aux != null){
-            if (aux.getElemento() > maior.getElemento()) {
-                maior = aux;
+            if (aux.getElemento() % 2 == 0) {
+                total += aux.getElemento();
             }
             aux = aux.getProx();
         }
-        return maior.getElemento();
+        return total;
     }
 }
