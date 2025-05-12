@@ -28,7 +28,7 @@ public class FilaInt {
     }
 
     public boolean isEmpty() {
-        return (this.head==null);
+        return (this.head == null);
     }
 
     public int size() {
@@ -45,6 +45,7 @@ public class FilaInt {
 
     public void enqueue (int info) {
         NoInt novoNo = new NoInt(info);
+
         if (this.isEmpty()) {
             this.head = novoNo;
         }else {
@@ -61,6 +62,7 @@ public class FilaInt {
 
     public NoInt dequeue () {
         NoInt aux = this.head;
+
         if (this.isEmpty()) {
             return null;
         }else {

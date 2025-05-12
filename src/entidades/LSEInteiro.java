@@ -1,6 +1,4 @@
-package listasimplesmenteencadeada_inteiro;
-
-import entidades.NoInt;
+package entidades;
 
 public class LSEInteiro {
     private NoInt prim, ult;

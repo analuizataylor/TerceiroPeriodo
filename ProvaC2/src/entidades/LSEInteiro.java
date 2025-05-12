@@ -1,6 +1,4 @@
-package listasimplesmenteencadeada_inteiro;
-
-import entidades.NoInt;
+package entidades;
 
 public class LSEInteiro {
     private NoInt prim, ult;
@@ -19,6 +17,7 @@ public class LSEInteiro {
     public NoInt getUlt() {
         return ult;
     }
+
 
     public int tamanho () {
         return this.quant;

@@ -1,7 +1,9 @@
-package listasimplesmenteencadeada_inteiro;
-import java.util.Scanner;
+package exerciciosLSEInt;
 
 import entidades.NoInt;
+import entidades.LSEInteiro;
+
+import java.util.Scanner;
 
 public class LSEInteiroMain {
 
