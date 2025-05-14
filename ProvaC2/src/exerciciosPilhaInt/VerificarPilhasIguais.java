@@ -1,7 +1,6 @@
 package exerciciosPilhaInt;
 
 import java.util.Scanner;
-import entidades.NoInt;
 import entidades.PilhaInt;
 
 /*
@@ -93,7 +92,4 @@ public class VerificarPilhasIguais {
 		}
 		return igual;
 	}
-
-
-
 }
