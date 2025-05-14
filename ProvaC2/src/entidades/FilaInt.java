@@ -60,7 +60,7 @@ public class FilaInt {
      * dequeue → Remove o elemento do início da fila
      */
 
-    public NoInt dequeue (int atual) {
+    public NoInt dequeue () {
         NoInt aux = this.head;
 
         if (this.isEmpty()) {

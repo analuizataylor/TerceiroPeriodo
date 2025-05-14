@@ -40,20 +40,20 @@ public class RemoverElementosFila {
 
     public static void remover(FilaInt fila) {
         FilaInt aux = new FilaInt();
+        NoInt no;
 
         while (!fila.isEmpty()) {
-            int elemento = fila.dequeue(); // Remove do início da fila original
+            no = fila.dequeue();
 
-            if (elemento < 10) {
-                aux.enqueue(elemento); // Insere na temp apenas se < 10
+            if (no.getElemento() <= 10) {
+                aux.enqueue(no.getElemento());
             }
+
         }
 
         while (!aux.isEmpty()) {
-            fila.enqueue(aux.dequeue());
+            no = aux.dequeue();
+            fila.enqueue(no.getElemento());
         }
-
     }
-
-
 }
